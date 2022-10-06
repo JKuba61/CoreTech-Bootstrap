@@ -1,0 +1,402 @@
+@import 'colors';
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	background-color: $bodyBgColor;
+}
+html {
+	scroll-padding-top: 82px;
+}
+a {
+	text-decoration: none;
+}
+.BrandName {
+	color: $mainColor;
+}
+.shadow-bg {
+	background-color: rgba(1, 1, 1, 0.7);
+}
+.underline {
+	margin: 0 auto 50px;
+	height: 4px;
+	width: 50%;
+	background-color: $mainColor;
+}
+
+h2 {
+	text-align: center;
+	text-transform: uppercase;
+}
+nav {
+	text-transform: uppercase;
+	.navColor {
+		color: $color1;
+	}
+	.navColor:hover {
+		color: $mainColor;
+	}
+	.active {
+		color: $mainColor;
+	}
+	.ti-menu-2 {
+		padding: 10px;
+	}
+	transition: color 0.3s, background-color 0.7s;
+	z-index: 1;
+}
+header {
+	.heroIMG {
+		position: relative;
+		height: 100vh;
+		background-image: url('../img/konsola-pady640.jpg');
+		background-size: cover;
+		background-position: center;
+		background-attachment: fixed;
+		z-index: 0;
+	}
+	.heroShadow {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(1, 1, 1, 0.301);
+		z-index: -10;
+	}
+	.heroText {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		padding: 10px;
+		text-align: center;
+		height: 100%;
+		color: $color1;
+		h1 {
+			margin-bottom: 5px;
+			text-transform: uppercase;
+			text-shadow: 5px 5px 5px black;
+		}
+		p {
+			font-size: 12px;
+		}
+		z-index: 5;
+	}
+	.btn-outline-light {
+		text-transform: uppercase;
+	}
+	.ti-caret-down {
+		position: absolute;
+		bottom: 5px;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 30px;
+		color: $color1;
+	}
+}
+
+.aboutus {
+	i {
+		margin-top: 20px;
+		font-size: 30px;
+		color: $mainColor;
+	}
+	.aboutusCardTitle {
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+	.aboutusCardText {
+		font-size: 14px;
+	}
+	.aboutusHover {
+		transition: color 0.4s;
+	}
+	.aboutusHover:hover {
+		color: $mainColor;
+	}
+}
+
+.aboutusHero {
+	position: relative;
+	background-image: url('../img/wykres640.jpg');
+	background-size: cover;
+	background-position: center;
+	z-index: 0;
+	color: $color1;
+	.aboutusShadow {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(1, 1, 1, 0.5);
+		z-index: -10;
+	}
+	i {
+		margin-top: 20px;
+		font-size: 30px;
+		color: $mainColor;
+	}
+	.aboutusHeroTitle {
+		font-size: 24px;
+		text-transform: uppercase;
+	}
+	.aboutusHeroText {
+		font-size: 14px;
+	}
+	.aboutusHeroItem {
+		transition: color 0.4s;
+	}
+	.aboutusHeroItem:hover {
+		color: $mainColor;
+	}
+}
+.portfolio {
+	.carousel-item {
+		height: 500px;
+		img {
+			position: absolute;
+			object-fit: cover;
+			top: 0;
+			left: 0;
+			min-height: 500px;
+		}
+	}
+	.carousel-caption {
+		padding: 20px;
+		left: 0;
+		right: 0;
+		background-color: rgba(1, 1, 1, 0.7);
+	}
+	.carousel-indicators {
+		padding-bottom: 10px;
+	}
+	.card {
+		margin: 10px;
+		img {
+			object-fit: cover;
+			height: 150px;
+		}
+	}
+}
+.prices {
+	.priceBox {
+		margin: 20px 10px;
+		padding: 30px;
+		background-color: $color1;
+		box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+		transition: transform 0.3s;
+	}
+	.pricesText {
+		text-align: center;
+	}
+	span {
+		font-weight: bold;
+	}
+	.pricesTextBottom {
+		margin: 25px 25px 5px 25px;
+		font-size: 1.2em;
+		a {
+			text-shadow: 6px 3px 6px rgba(1, 1, 1, 0.3);
+		}
+	}
+	i,
+	h5 {
+		color: $mainColor;
+		text-transform: uppercase;
+	}
+	.pricesContact {
+		color: black;
+		transition: color 0.2s;
+	}
+	.pricesContact:hover {
+		color: $mainColor;
+		text-shadow: 5px 5px 5px rgba(0, 187, 0, 0.3);
+	}
+	.btnOrder {
+		color: $mainColor;
+		border: 1px solid $mainColor;
+		border-radius: 10px;
+		text-transform: uppercase;
+		padding: 10px 20px;
+		font-weight: bold;
+		transition: background-color 0.3s, color 0.3s;
+	}
+	.btnOrder:hover {
+		color: $color1;
+		background-color: $mainColor;
+	}
+	.priceBox:hover {
+		transform: scale(1.08);
+	}
+}
+.team {
+	position: relative;
+	background-image: url(/img/SalaKonferencyjna_1280.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	z-index: 0;
+
+	.teamShadow {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(1, 1, 1, 0.6);
+		z-index: -10;
+	}
+	.shadowText {
+		z-index: 5;
+	}
+	h2 {
+		color: $color1;
+	}
+	.card {
+		margin: 0px 20px 0px 20px;
+		transition: transform 0.3s;
+		min-height: 00px;
+		img {
+			height: 300px;
+			object-fit: cover;
+		}
+		.card-title {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		.card-body {
+			min-height: 270px;
+		}
+		.teamLinks {
+			display: flex;
+			justify-content: space-around;
+			color: $color3;
+			i {
+				padding: 5px;
+			}
+		}
+	}
+	.card:hover {
+		transform: scale(0.97);
+	}
+}
+.achievements {
+	.achevements-list {
+		padding: 20px 0;
+	}
+	.achievements-box {
+		i {
+			font-size: 42px;
+		}
+		.achievement-number {
+			font-size: 24px;
+			font-weight: bold;
+			margin-bottom: 0px;
+		}
+		.achievement-text {
+			text-transform: uppercase;
+		}
+		text-align: center;
+		transition: color 0.2s;
+	}
+}
+.achievements-box:hover {
+	color: $mainColor;
+}
+
+.contact {
+	position: relative;
+	background-image: url(/img/skyline640.jpg);
+	background-size: cover;
+	background-position: bottom;
+	background-attachment: fixed;
+	z-index: 0;
+	color: $color1;
+	.contactShadow {
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 22, 0.7);
+		z-index: -10;
+	}
+	.contact-items {
+		z-index: 5;
+		h3 {
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			margin: 10px;
+			padding-bottom: 10px;
+		}
+		.social-media {
+			a {
+				color: $color1;
+				font-size: 40px;
+				margin: 25px;
+				transition: color 0.2s;
+			}
+			a:hover {
+				color: $mainColor;
+			}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	header {
+		.heroText {
+			h1 {
+				font-size: 30px;
+			}
+			p {
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	header {
+		.heroText {
+			h1 {
+				font-size: 42px;
+			}
+			p {
+				font-size: 20px;
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	header {
+		.heroIMG {
+			background-image: url('../img/konsola-pady1920.jpg');
+		}
+
+		.heroText {
+			h1 {
+				font-size: 48px;
+			}
+			p {
+				font-size: 26px;
+			}
+		}
+		.prices {
+			.pricesTextBottom {
+				font-size: 18px;
+			}
+		}
+	}
+	.aboutusHero {
+		background-image: url('../img/wykres1920.jpg');
+	}
+	.team {
+		background-image: url(/img/SalaKonferencyjna_1920.jpg);
+	}
+	.contact {
+		background-image: url(../img/skyline1920.jpg);
+	}
+}

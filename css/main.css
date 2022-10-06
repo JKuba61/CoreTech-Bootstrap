@@ -1,0 +1,474 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ebecf2;
+}
+
+html {
+  scroll-padding-top: 82px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.BrandName {
+  color: #00bb00;
+}
+
+.shadow-bg {
+  background-color: rgba(1, 1, 1, 0.7);
+}
+
+.underline {
+  margin: 0 auto 50px;
+  height: 4px;
+  width: 50%;
+  background-color: #00bb00;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+nav {
+  text-transform: uppercase;
+  -webkit-transition: color 0.3s, background-color 0.7s;
+  transition: color 0.3s, background-color 0.7s;
+  z-index: 1;
+}
+
+nav .navColor {
+  color: #fff;
+}
+
+nav .navColor:hover {
+  color: #00bb00;
+}
+
+nav .active {
+  color: #00bb00;
+}
+
+nav .ti-menu-2 {
+  padding: 10px;
+}
+
+header .heroIMG {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/konsola-pady640.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+header .heroShadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(1, 1, 1, 0.301);
+  z-index: -10;
+}
+
+header .heroText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  text-align: center;
+  height: 100%;
+  color: #fff;
+  z-index: 5;
+}
+
+header .heroText h1 {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  text-shadow: 5px 5px 5px black;
+}
+
+header .heroText p {
+  font-size: 12px;
+}
+
+header .btn-outline-light {
+  text-transform: uppercase;
+}
+
+header .ti-caret-down {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: #fff;
+}
+
+.aboutus i {
+  margin-top: 20px;
+  font-size: 30px;
+  color: #00bb00;
+}
+
+.aboutus .aboutusCardTitle {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.aboutus .aboutusCardText {
+  font-size: 14px;
+}
+
+.aboutus .aboutusHover {
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+}
+
+.aboutus .aboutusHover:hover {
+  color: #00bb00;
+}
+
+.aboutusHero {
+  position: relative;
+  background-image: url("../img/wykres640.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  color: #fff;
+}
+
+.aboutusHero .aboutusShadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(1, 1, 1, 0.5);
+  z-index: -10;
+}
+
+.aboutusHero i {
+  margin-top: 20px;
+  font-size: 30px;
+  color: #00bb00;
+}
+
+.aboutusHero .aboutusHeroTitle {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.aboutusHero .aboutusHeroText {
+  font-size: 14px;
+}
+
+.aboutusHero .aboutusHeroItem {
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+}
+
+.aboutusHero .aboutusHeroItem:hover {
+  color: #00bb00;
+}
+
+.portfolio .carousel-item {
+  height: 500px;
+}
+
+.portfolio .carousel-item img {
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 0;
+  left: 0;
+  min-height: 500px;
+}
+
+.portfolio .carousel-caption {
+  padding: 20px;
+  left: 0;
+  right: 0;
+  background-color: rgba(1, 1, 1, 0.7);
+}
+
+.portfolio .carousel-indicators {
+  padding-bottom: 10px;
+}
+
+.portfolio .card {
+  margin: 10px;
+}
+
+.portfolio .card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 150px;
+}
+
+.prices .priceBox {
+  margin: 20px 10px;
+  padding: 30px;
+  background-color: #fff;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.prices .pricesText {
+  text-align: center;
+}
+
+.prices span {
+  font-weight: bold;
+}
+
+.prices .pricesTextBottom {
+  margin: 25px 25px 5px 25px;
+  font-size: 1.2em;
+}
+
+.prices .pricesTextBottom a {
+  text-shadow: 6px 3px 6px rgba(1, 1, 1, 0.3);
+}
+
+.prices i,
+.prices h5 {
+  color: #00bb00;
+  text-transform: uppercase;
+}
+
+.prices .pricesContact {
+  color: black;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.prices .pricesContact:hover {
+  color: #00bb00;
+  text-shadow: 5px 5px 5px rgba(0, 187, 0, 0.3);
+}
+
+.prices .btnOrder {
+  color: #00bb00;
+  border: 1px solid #00bb00;
+  border-radius: 10px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  font-weight: bold;
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.prices .btnOrder:hover {
+  color: #fff;
+  background-color: #00bb00;
+}
+
+.prices .priceBox:hover {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+}
+
+.team {
+  position: relative;
+  background-image: url(/img/SalaKonferencyjna_1280.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+.team .teamShadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(1, 1, 1, 0.6);
+  z-index: -10;
+}
+
+.team .shadowText {
+  z-index: 5;
+}
+
+.team h2 {
+  color: #fff;
+}
+
+.team .card {
+  margin: 0px 20px 0px 20px;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  min-height: 00px;
+}
+
+.team .card img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.team .card .card-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.team .card .card-body {
+  min-height: 270px;
+}
+
+.team .card .teamLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #006eff;
+}
+
+.team .card .teamLinks i {
+  padding: 5px;
+}
+
+.team .card:hover {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+}
+
+.achievements .achevements-list {
+  padding: 20px 0;
+}
+
+.achievements .achievements-box {
+  text-align: center;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.achievements .achievements-box i {
+  font-size: 42px;
+}
+
+.achievements .achievements-box .achievement-number {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.achievements .achievements-box .achievement-text {
+  text-transform: uppercase;
+}
+
+.achievements-box:hover {
+  color: #00bb00;
+}
+
+.contact {
+  position: relative;
+  background-image: url(/img/skyline640.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  z-index: 0;
+  color: #fff;
+}
+
+.contact .contactShadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 22, 0.7);
+  z-index: -10;
+}
+
+.contact .contact-items {
+  z-index: 5;
+}
+
+.contact .contact-items h3 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 10px;
+  padding-bottom: 10px;
+}
+
+.contact .contact-items .social-media a {
+  color: #fff;
+  font-size: 40px;
+  margin: 25px;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.contact .contact-items .social-media a:hover {
+  color: #00bb00;
+}
+
+@media (max-width: 767px) {
+  header .heroText h1 {
+    font-size: 30px;
+  }
+  header .heroText p {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  header .heroText h1 {
+    font-size: 42px;
+  }
+  header .heroText p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  header .heroIMG {
+    background-image: url("../img/konsola-pady1920.jpg");
+  }
+  header .heroText h1 {
+    font-size: 48px;
+  }
+  header .heroText p {
+    font-size: 26px;
+  }
+  header .prices .pricesTextBottom {
+    font-size: 18px;
+  }
+  .aboutusHero {
+    background-image: url("../img/wykres1920.jpg");
+  }
+  .team {
+    background-image: url(/img/SalaKonferencyjna_1920.jpg);
+  }
+  .contact {
+    background-image: url(../img/skyline1920.jpg);
+  }
+}
+/*# sourceMappingURL=main.css.map */
